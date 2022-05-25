@@ -7,7 +7,7 @@ const Item = ({ title = "", status = false, children }) => {
   return (
     <li className="item">
       <h2 className="item__title">
-        <span className={`item__dot ${status && "item__dot--green"}`}></span>
+        <span className={`item__dot ${status ? "item__dot--green" : ""}`}></span>
         <Link to={`/apparts/${slugify(title)}`}>{title}</Link>
       </h2>
       <div className="item__content">{children}</div>

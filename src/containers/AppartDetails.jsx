@@ -20,7 +20,7 @@ const AppartDetails = () => {
       <h1>
         {appart[0].title}
         <span
-          className={`item__dot ${appart[0].status && "item__dot--green"}`}
+          className={`item__dot ${appart[0].status ? "item__dot--green" : ""}`}
         ></span>
       </h1>
       <p>{appart[0].description}</p>
